@@ -4,6 +4,22 @@ from django.contrib.auth import authenticate, login, logout
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
+@csrf_exempt
+def home(request):
+    return HttpResponse("""
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Car Dealership</title>
+        </head>
+        <body>
+            <h1>Welcome to Car Dealership</h1>
+            <p>Find your next car with us.</p>
+            <p>The Django application is running.</p>
+            <a href="/admin/">Admin</a>
+        </body>
+        </html>
+    """) 
 
 @csrf_exempt
 def login_user(request):
