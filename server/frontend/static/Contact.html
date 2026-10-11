@@ -1,62 +1,65 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Car Dealership Application</title>
+    <title>Contact Us | Car Dealership</title>
 
-    <!-- Update this path to match your project's stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="/">Home</a>
-            <a href="/about">About Us</a>
-            <a href="/contact" class="active" aria-current="page">Contact Us</a>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Car Dealership</a>
+            <div class="navbar-nav">
+                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/static/About.html">About Us</a>
+                <a class="nav-link active"
+                   aria-current="page"
+                   href="/static/Contact.html">Contact Us</a>
+            </div>
+        </div>
+    </nav>
 
-    <main>
-        <section class="contact-hero">
-            <h1>Contact Us</h1>
-            <p>We're here to help with your dealership and vehicle enquiries.</p>
-            <img
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
-                alt="Modern office building"
-                class="contact-image">
-        </section>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">Contact Us</h1>
 
-        <section class="contact-details">
-            <h2>Get in Touch</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4">
+                <img src="/static/cars.jpeg"
+                     alt="Cars at our dealership"
+                     class="img-fluid rounded mb-3">
 
-            <div class="contact-card">
-                <h3>Customer Support</h3>
-                <p>For assistance with dealership listings, reviews, and account access.</p>
-                <p><strong>Email:</strong>
-                    <a href="mailto:support@example.com">support@example.com</a>
+                <img src="/static/contactus.png"
+                     alt="Contact our dealership team"
+                     class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-6">
+                <h2>Get in Touch</h2>
+                <p>We are here to help with your car dealership questions.</p>
+
+                <p><strong>Address:</strong><br>
+                    123 Main Street, Wichita, Kansas 67202
                 </p>
-                <p><strong>Phone:</strong> +1 800 555 0100</p>
-            </div>
 
-            <div class="contact-card">
-                <h3>Business Enquiries</h3>
-                <p>Contact us about dealership information and business partnerships.</p>
-                <p><strong>Email:</strong>
-                    <a href="mailto:business@example.com">business@example.com</a>
+                <p><strong>Phone:</strong><br>
+                    +1 316-555-0101
+                </p>
+
+                <p><strong>Email:</strong><br>
+                    support@cardealership.com
+                </p>
+
+                <p><strong>Business Hours:</strong><br>
+                    Monday–Friday: 9:00 AM–6:00 PM<br>
+                    Saturday: 10:00 AM–4:00 PM<br>
+                    Sunday: Closed
                 </p>
             </div>
-
-            <div class="contact-card">
-                <h3>Office Information</h3>
-                <p><strong>Address:</strong> Add your actual office or project contact address.</p>
-                <p><strong>Working Hours:</strong> Monday–Friday, 9:00 AM–5:00 PM</p>
-            </div>
-        </section>
+        </div>
     </main>
-
-    <footer>
-        <p>&copy; 2026 Car Dealership Application. All rights reserved.</p>
-    </footer>
 </body>
 </html>
