@@ -1,0 +1,38 @@
+.navbar {
+    display: flex;
+    gap: 24px;
+    padding: 16px 24px;
+    background-color: #1f2937;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background-color: #2563eb;
+    border-radius: 4px;
+}
+
+.contact-image {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px auto;
+}
+
+.contact-details {
+    padding: 24px;
+}
+
+.contact-card {
+    margin: 16px 0;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
